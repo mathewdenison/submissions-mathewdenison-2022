@@ -1,5 +1,13 @@
 ## Getting Started
 
+Clone this repo locally
+
+Make a branch of this code and name the branch submissions/your-name-2022
+
+Make commits to your branch as you would professionally 
+
+(hint: make small commits with descriptive commit messages)
+
 - make sure to install node js and yarn package manager on your computer
 - from this directory run the following commands
 
@@ -8,7 +16,7 @@ yarn install
 yarn serve
 ```
 
-you should see this output in your terminal after running `yarn serve`
+You should see this output in your terminal after running `yarn serve`
 ```
 code-test-2022~(main|✔) % yarn serve
 yarn run v1.22.19
@@ -31,8 +39,17 @@ now you can navigate to http://localhost:8080 in your browser to see the working
 
 This is a news feed app.
 
-Your assignment is to build a reusable component to **replace** each article in `./src/App.vue`. You should not use the table format in the example article.
+Your assignment:
+1. **Replace** the article in `./src/App.vue` with a component. See `./src/components/HelloWorld.vue` for an example of a component and `./src/App.vue` for an example on how to consume. You may choose to refactor the HTML in the component to use `div`s instead of a table to organize HTML elements.
+2. In `./src/App.vue` loop through the array of articles in `./assets/data.json` to render components with values from the array.
+3. Style the Article component with the following using CSS:
+   1. Title should have a yellow background
+   2. text should be italicized
+   3. article image should have rounded corners
+   4. every 2nd article should be to the right of the first article
 
-You will need to loop through the data array of articles to populate your component for each article. There is an example of a component in `./src/components/HelloWorld.vue`
+There is no time limit for this assessment. 
 
-Each Article title should have a yellow highlighted background and the text should be italicized. The article image should have rounded corners and every other article the image should be on the opposite side. This should be done with CSS.
+Use as many outside resources as you need.
+
+This is not a test of technical ability, but a test of how quickly you can pick up new languages, workflows, and skills. Do your best. Before submitting, make sure it compiles and runs.
