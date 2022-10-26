@@ -9,7 +9,7 @@ Make commits to your branch as you would professionally
 (hint: make small commits with descriptive commit messages)
 
 - make sure to install node js and yarn package manager on your computer
-- from this directory run the following commands
+- from the application directory run the following commands in terminal
 
 ```
 yarn install
