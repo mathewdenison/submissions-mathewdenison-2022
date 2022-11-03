@@ -46,9 +46,10 @@ Your assignment:
    1. Title should have a yellow background
    2. text should be italicized
    3. article image should have rounded corners
-   4. every 2nd article should be to the right of the first article
+   4. The article image should alternate from left to right (view the example screen shot ./public/Screenshot-example.png)
 
-There is no time limit for this assessment. 
+
+There is no time limit for this assessment.
 
 Use as many outside resources as you need.
 
