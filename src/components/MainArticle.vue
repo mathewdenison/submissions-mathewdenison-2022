@@ -1,41 +1,69 @@
 <template>
-    <div>
-        <h1>Hello World, here is the news!</h1>
-        <button v-on:click="getArticleData">Get Article Data</button>
+        <h1 class="title-header"><span>Hello World, here is the news!</span></h1>
+        <button v-on:click="getArticleData">Click Here To View The News!</button>
         <div v-for="articleData in articleDataList" :key="articleData.title" class="article-data">
             <div class="article-image">
                 <img :src=articleData.media>
             </div>
             <div class="article-info">
-                <div>
-                    <span>{{articleData.author}}</span>
+                <div class="background-color">
+                    <span style="font-size: 30px">{{articleData.excerpt}}</span>
                 </div>
+                <p></p>
+                <p></p>
                 <div>
-                    <span>{{articleData.excerpt}}</span>
+                    By: <span style="font-size: 22px">{{articleData.author}}</span>
                 </div>
+                <p></p>
+                <h1 style="font-size: 10px"></h1>
+                <h1 style="font-size: 15px"></h1>
                 <div>
-                    <span>{{articleData.summary}}</span>
+                    <span><em>{{articleData.summary}}</em></span>
                 </div>
+                <h1 style="font-size: 10px"></h1>
                 <div>
-                    <span><a href="url">{{articleData.link}}</a></span>
+                    <span><a href="{{articleData.link}}"> Read More...</a></span>
                 </div>
             </div>
         </div>
-    </div>
   </template>
 
 <style scoped>
+
+.title-header {
+    padding: 20px;
+    align-items: center;
+    font-style: italic;
+}
+
 .article-data {
-  display: flex;
+  display: inline-flex;
+  flex-direction: row-reverse;
   align-items: center;
   margin-top: 20px;
   margin-left: 20px;
-  border-bottom: 2px solid #ccc;
-  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  line-height: 2em;
+}
+
+.article-data:nth-child(odd) {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .article-image {
   flex-grow: 1;
+}
+
+.background-color {
+    background-color: yellow;
 }
 
 .article-info {
@@ -44,8 +72,14 @@
   padding-left: 20px;
 }
 
-img {
-  width: 200px;
+div img {
+  width: 500px;
+  height: auto;
+  float:left;
+  clear:left;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
 }
 
 button {
@@ -56,6 +90,7 @@ button {
 }
 
 </style>
+
   
   <script>
   export default {
