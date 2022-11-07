@@ -1,48 +1,17 @@
 <template>
-  <HelloWorld msg="Hello World, here is the news!" />
-  <div class="article">
-    <table>
-      <tr>
-        <td>
-          <img :src="articles[0].media" width="300" />
-        </td>
-        <td>
-          <table>
-            <tr>
-              <td>
-                <h1>{{ articles[0].title }}</h1>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h3>By {{ articles[0].author }}</h3>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>By {{ articles[0].summary }}</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a :href="articles[0].link">Read More...</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+  <div id="app">
+  <MainArticle></MainArticle>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MainArticle from "./components/MainArticle.vue";
 import data from "./assets/data.json";
 
 export default {
-  name: "App",
+  name: "app",
   components: {
-    HelloWorld,
+    MainArticle,
   },
   data() {
     return {
