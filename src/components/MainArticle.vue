@@ -1,6 +1,6 @@
 <template>
         <h1 class="title-header"><span>Hello World, here is the news!</span></h1>
-        <button v-on:click="getArticleData">Click Here To View The News!</button>
+        <button v-on:="getArticleData">Click Here To View The News!</button>
         <div v-for="articleData in articleDataList" :key="articleData.title" class="article-data">
             <div class="article-image">
                 <img :src=articleData.media>
