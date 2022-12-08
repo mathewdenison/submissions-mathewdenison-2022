@@ -1,27 +1,58 @@
 <template>
-  <div id="app">
-  <MainArticle></MainArticle>
+  <h1 class="title-header"><span>Hello World, here is the news!</span></h1>
+  <button v-on:click="getArticleData">Click Here To View The News!</button>
+  <div
+    v-for="articleData in articleDataList"
+    :key="articleData.title"
+    class="article-data"
+  >
+    <div class="article-image">
+      <img :src="articleData.media" />
+    </div>
+    <div class="article-info">
+      <div class="background-color">
+        <span style="font-size: 30px">{{ articleData.excerpt }}</span>
+      </div>
+      <p></p>
+      <p></p>
+      <div>
+        By: <span style="font-size: 22px">{{ articleData.author }}</span>
+      </div>
+      <p></p>
+      <h1 style="font-size: 10px"></h1>
+      <h1 style="font-size: 15px"></h1>
+      <div>
+        <span
+          ><em>{{ articleData.summary }}</em></span
+        >
+      </div>
+      <h1 style="font-size: 10px"></h1>
+      <div>
+        <span><a href="{{articleData.link}}"> Read More...</a></span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import MainArticle from "./components/MainArticle.vue";
-import data from "./assets/data.json";
-
 export default {
   name: "app",
-  components: {
-    MainArticle,
-  },
   data() {
     return {
-      articles: data,
+      articleDataList: [],
     };
+  },
+  methods: {
+    getArticleData() {
+      fetch("data.json")
+        .then((response) => response.json())
+        .then((data) => (this.articleDataList = data));
+    },
   },
 };
 </script>
 
-<style>
+<style scoped src="@/components/MainArticle.vue">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
