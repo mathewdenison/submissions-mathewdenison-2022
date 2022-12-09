@@ -67,12 +67,5 @@ export default {
       articleDataList: [],
     };
   },
-  methods: {
-    getArticleData() {
-      fetch("data.json")
-        .then((response) => response.json())
-        .then((data) => (this.articleDataList = data));
-    },
-  },
 };
 </script>

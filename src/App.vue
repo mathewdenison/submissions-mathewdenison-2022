@@ -1,6 +1,6 @@
 <template>
   <h1 class="title-header"><span>Hello World, here is the news!</span></h1>
-  <button v-on:click="getArticleData">Click Here To View The News!</button>
+  <component :is="getArticleData"> Click Here To View The News! </component>
   <div
     v-for="articleData in articleDataList"
     :key="articleData.title"
