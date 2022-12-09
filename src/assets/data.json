@@ -1,4 +1,4 @@
-[
+{ "articles":[
   {
     "title": "What Is Quantum Computing, Is It Real, and How Does It Change Things?",
     "author": "Katie Rees",
@@ -231,3 +231,4 @@
     "_id": "a53422ddfa770cc4d04951e1a4ca4065"
   }
 ]
+}

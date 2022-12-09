@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     getArticleData() {
-      fetch("data.json")
+      fetch("http://localhost:3000/articles")
         .then((response) => response.json())
         .then((data) => (this.articleDataList = data));
     },

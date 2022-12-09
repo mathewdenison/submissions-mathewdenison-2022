@@ -58,14 +58,3 @@ button {
   border: 1px solid #ccc;
 }
 </style>
-
-<script>
-export default {
-  name: "MainArticle",
-  data() {
-    return {
-      articleDataList: [],
-    };
-  },
-};
-</script>
