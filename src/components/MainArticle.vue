@@ -2,7 +2,6 @@
 .title-header {
   padding: 20px;
   align-items: center;
-  font-style: italic;
 }
 
 .article-data {
@@ -11,6 +10,7 @@
   align-items: center;
   margin-top: 20px;
   margin-left: 20px;
+  margin-inline-end: 80px;
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 80px;
@@ -23,6 +23,7 @@
   align-items: center;
   margin-top: 20px;
   margin-left: 20px;
+  margin-inline-end: 80px;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -39,7 +40,7 @@
   flex-grow: 8;
   text-align: left;
   padding-left: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
 
 div img {
