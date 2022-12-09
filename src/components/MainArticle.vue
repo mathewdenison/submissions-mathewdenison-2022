@@ -11,6 +11,7 @@
   align-items: center;
   margin-top: 20px;
   margin-left: 20px;
+  margin-bottom: 40px;
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 80px;
@@ -23,6 +24,7 @@
   align-items: center;
   margin-top: 20px;
   margin-left: 20px;
+  margin-bottom: 40px;
   padding-left: 80px;
   padding-right: 80px;
 }
@@ -39,6 +41,7 @@
   flex-grow: 8;
   text-align: left;
   padding-left: 20px;
+  margin-bottom: 20px;
 }
 
 div img {

@@ -1,6 +1,6 @@
 <template>
   <h1 class="title-header"><span>Hello World, here is the news!</span></h1>
-  <component :is="getArticleData"> Click Here To View The News! </component>
+  <component :is="getArticleData"></component>
   <div
     v-for="articleData in articleDataList"
     :key="articleData.title"
@@ -13,12 +13,9 @@
       <div class="background-color">
         <span style="font-size: 30px">{{ articleData.excerpt }}</span>
       </div>
-      <p></p>
-      <p></p>
       <div>
         By: <span style="font-size: 22px">{{ articleData.author }}</span>
       </div>
-      <p></p>
       <h1 style="font-size: 10px"></h1>
       <h1 style="font-size: 15px"></h1>
       <div>
