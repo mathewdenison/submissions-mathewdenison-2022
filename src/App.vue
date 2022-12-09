@@ -3,7 +3,7 @@
   <component :is="getArticleData"></component>
   <div
     v-for="articleData in articleDataList"
-    :key="articleData.title"
+    :key="articleData"
     class="article-data"
   >
     <div class="article-image">
@@ -11,7 +11,7 @@
     </div>
     <div class="article-info">
       <div class="background-color">
-        <span style="font-size: 30px">{{ articleData.excerpt }}</span>
+        <span style="font-size: 30px">{{ articleData.title }}</span>
       </div>
       <div>
         By: <span style="font-size: 22px">{{ articleData.author }}</span>
